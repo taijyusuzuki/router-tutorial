@@ -1,0 +1,51 @@
+.app-nav {
+  display: flex;
+  border-bottom: solid 1px;
+  padding-bottom: 1rem;
+}
+
+.invoice-nav {
+  border-right: solid 1px;
+  border-color: black;
+  padding-right: 0.5rem;
+}
+
+.expenses-nav {
+  padding-left: 0.5rem;
+}
+
+.expenses {
+  padding: 1rem 0;
+}
+
+.invoice-list {
+  display: flex;
+}
+
+.invoice-list-nav {
+  border-right: solid 1px;
+  padding: 1rem;
+}
+
+.invoice-detail {
+  padding: 1rem;
+}
+
+.not-found {
+  padding: 1rem;
+}
+
+.delete-invoice-button {
+  padding: 5px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  width: 2rem;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.delete-invoice-button:hover {
+  background-color: #282c34;
+  color: antiquewhite;
+}
