@@ -8,6 +8,7 @@ const config = {
   mode: isDev ? 'development' : 'production',
   devtool: isDev ? 'source-map' : undefined,
   devServer: {
+    historyApiFallback: true,
     static: {
       directory: path.join(__dirname, `dist/${version}`),
     },
