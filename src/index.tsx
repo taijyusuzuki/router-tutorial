@@ -1,18 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-import App from "./App";
-import Expenses from "./components/expenses";
-import Invoices from "./components/invoices";
-import NotFound from "./components/notFound";
 import reportWebVitals from './reportWebVitals';
-import InvoiceDetail from "./components/invoiceDetail";
-import Index from "./components";
 import './index.css';
+import Router from "./Router";
 
 /**
  * Main(index) Component
@@ -21,20 +11,9 @@ import './index.css';
  */
 const Main = () => {
   return (
-    <BrowserRouter>
-      <React.StrictMode>
-        <Routes>
-          <Route path='/' element={<App />}>
-            <Route path='expenses' element={<Expenses />} />
-            <Route path='invoices' element={<Invoices />} >
-              <Route index element={<Index />} />
-              <Route path=':invoiceId' element={<InvoiceDetail />} />
-            </Route>
-            <Route path='*' element={<NotFound />} />
-          </Route>
-        </Routes>
-      </React.StrictMode>
-    </BrowserRouter>
+    <React.StrictMode>
+      <Router />
+    </React.StrictMode>
   );
 };
 
